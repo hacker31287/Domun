@@ -29,7 +29,7 @@ class Domain:
     def All(self):
         try:
             ips = socket.gethostbyname(self.domain)
-            r = requests.get("https://sonar.omnisint.io/reverse/{}".format(ips))
+            r = requests.get("https://sonar.omnisint.io/all/{}".format(ips))
             result = json.loads(r.text)
             print("        [{}] > [{} Domain]".format(self.domain, len(result)))
             for a in result:
