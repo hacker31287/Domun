@@ -44,8 +44,6 @@ class Domain:
             website.reverse()
         elif selection == "3":
             website.All()
-        elif selection == "4":
-            website.removeDuplicate()
         else:
             print("        [!] Wrong input please try again...")
 
