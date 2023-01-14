@@ -18,7 +18,7 @@ class Domain:
     def reverse(self):
         try:
             ips = socket.gethostbyname(self.domain)
-            r = requests.get("https://sonar.omnisint.io/reverse/{}".format(ips))
+            r = requests.get("https://premiumbins.tk/reverse/?ip={}".format(ips))
             result = json.loads(r.text)
             print("        [{}] > [{} Domain]".format(self.domain, len(result)))
             for a in result:
